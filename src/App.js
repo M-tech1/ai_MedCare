@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Navbar from "./components/Nav";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Chat from "./components/Chat";
+import Chats from "./pages/Chats";
+// import Chat from "./components/Chat";
 
 const App = () => {
   return (
@@ -14,8 +15,11 @@ const App = () => {
 
       <Home />
       <About />
+      <Chats />
       <Contact />
-      <Chat />
+
+      {/* <Chat /> */}
+
       <Footer />
     </>
   );
