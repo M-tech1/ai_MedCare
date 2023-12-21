@@ -1,31 +1,19 @@
 import React from "react";
 import "./Styles.css";
-import aiabout from "../assets/aibot.png";
+// import aiabout from "../assets/aibot.png";
+import Medinjection from "../assets/Medinjection.png";
 import { FaClinicMedical } from "react-icons/fa";
 import { FaTruckMedical } from "react-icons/fa6";
+// import Particle from "../components/Particle";
+import "./mobile_styles.css";
 
 const About = () => {
   return (
-    <div className="about_container" id="about">
+    <div className="container about_container" id="about">
       <div className="about_left_container">
+        <img className="img_about" src={Medinjection} />
         <div className="left_container">
-          <div className="left_container_text">
-            {" "}
-            <p> Expert system</p>
-            <div>
-              <p className="right_text3" style={{ paddingLeft: "40px" }}>
-                we can recommend whether users should consult a healthcare
-                professional
-              </p>{" "}
-            </div>
-          </div>
-
-          {/* <div> second content</div> */}
-          <div className="about_us_bot">
-            {" "}
-            <img src={aiabout} />{" "}
-          </div>
-          <button> register now</button>
+          <button> Register Now</button>
         </div>
       </div>
 
@@ -33,8 +21,8 @@ const About = () => {
         <div className="right_text_content">
           <div className="right_text1">
             {" "}
-            covid-19 vaccine{" "}
-            <div className="right_text2">delivery services</div>
+            About Our services{" "}
+            <div className="right_text2">top notch deliverables</div>
           </div>
 
           <p className="right_text3">

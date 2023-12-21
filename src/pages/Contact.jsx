@@ -1,6 +1,8 @@
 import React from "react";
 import "./Styles.css";
 import contactimg from "../assets/contact.jpeg";
+import "./mobile_styles.css";
+
 const Contact = () => {
   return (
     <div className="contact_main" id="contact">
@@ -29,16 +31,18 @@ const Contact = () => {
               placeholder="Your Message"
             ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button className="contactBtn" type="submit">
+              Send Message
+            </button>
           </form>
         </div>
         <div className="contact-info">
           <h2>Contact Information</h2>
           <p>
             <strong>ai medical Center</strong> <br />
-            123 Health Street <br />
-            Cityville, Medical Country <br />
-            Email: info@medicalcenter.com <br />
+            OutSource Global <br />
+            Academy Project Group_1 <br />
+            Email: info@aimedcare.com <br />
             Phone: +234 (555) 123-4567
           </p>
 

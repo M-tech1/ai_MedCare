@@ -1,12 +1,10 @@
 import React from "react";
 import "./Styles.css";
+import "./mobile_styles.css";
+import logo from "../assets/MedEx.png";
 
 const Footer = () => {
   return (
-    // <div className='footer'  id='footer' >Footer</div>
-    // <footer className="footer" id="footer">
-    //   <p>&copy; 2023 Your Company. All rights reserved.</p>
-    // </footer>
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section about">
@@ -15,6 +13,15 @@ const Footer = () => {
             We are committed to providing high-quality healthcare services with
             compassion and excellence. Your health is our priority.
           </p>
+          <img
+            src={logo}
+            style={{
+              width: "10rem",
+              height: "2rem",
+              background: "white",
+              margin: "30px",
+            }}
+          />
         </div>
         <div className="footer-section contact">
           <h2>Contact Us</h2>
@@ -32,7 +39,9 @@ const Footer = () => {
             Schedule your appointment today for personalized and attentive
             medical care.
           </p>
-          <button className="btn-appointment">Schedule Now</button>
+          <a href="#contact">
+            <button className="btn-appointment">Schedule Now</button>
+          </a>
         </div>
       </div>
       <div className="footer-bottom">
