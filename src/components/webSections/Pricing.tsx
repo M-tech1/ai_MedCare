@@ -1,7 +1,6 @@
-import React from "react";
+// import React from "react";
 import { Button } from "../ui/button";
 import { BiToggleLeft } from "react-icons/bi";
-import { ToggleLeftIcon } from "lucide-react";
 import { FaCheckCircle } from "react-icons/fa";
 
 const Pricing = () => {

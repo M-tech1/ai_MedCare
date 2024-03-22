@@ -1,5 +1,5 @@
-import React from "react";
-import { FaTruckMedical } from "react-icons/fa6";
+// import React from "react";
+// import { FaTruckMedical } from "react-icons/fa6";
 import { FaRocketchat } from "react-icons/fa";
 import { FaUserDoctor } from "react-icons/fa6";
 import { AiOutlineSchedule } from "react-icons/ai";

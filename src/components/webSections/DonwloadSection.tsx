@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import kite from "../../assets/images/kite.png";
 import devices from "../../assets/images/devices.png";
 

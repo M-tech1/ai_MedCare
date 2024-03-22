@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import img from "../../assets/images/aitreat.jpeg";
 import { Button } from "../ui/button";
 import { FaCheckCircle } from "react-icons/fa";

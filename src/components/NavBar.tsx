@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { Button } from "./ui/button";
+// import React, { useState } from "react";
+// import { Button } from "./ui/button";
 
 const NavBar = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const toggleDropdown = (state: boolean) => {
-    setOpen(!state);
+  // const [open, setOpen] = useState<boolean>(false);
+  // const toggleDropdown = (state: boolean) => {
+  //   setOpen(!state);
 
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleDropdown = () => {
-      setIsOpen(!isOpen);
-    };
-  };
+  //   const [isOpen, setIsOpen] = useState(false);
+  //   const toggleDropdown = () => {
+  //     setIsOpen(!isOpen);
+  //   };
+  // };
 
   return (
     <>
@@ -35,13 +35,13 @@ const NavBar = () => {
               data-dropdown-toggle="user-dropdown"
               data-dropdown-placement="bottom"
               //   onClick={(e = toggleDropdown(isOpen)) => {}}
-              onClick={(e) => toggleDropdown(open)}
+              // onClick={(e) => toggleDropdown(open)}
             >
               <span className="sr-only bg-black">Open user menu</span>
               <img className="w-8 h-8 rounded-full" alt="user photo" />
             </button>
 
-            <Button onClick={(e) => toggleDropdown}>click</Button>
+            {/* <Button onClick={(e) => toggleDropdown}>click</Button> */}
 
             <div
               className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
@@ -99,7 +99,7 @@ const NavBar = () => {
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
-              <svg
+              {/* <svg
                 className="w-5 h-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@ const NavBar = () => {
                   stroke-width="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
-              </svg>
+              </svg> */}
             </button>
           </div>
 
