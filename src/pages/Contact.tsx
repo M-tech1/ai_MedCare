@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
+import { TfiAngleDoubleRight } from "react-icons/tfi";
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
       className="w-full h-[100vh] bg-lite flex flex-row gap-5 p-10 m-10"
     >
       <div className="w-1/2 h-[40rem] bg-primary rounded-xl text-white text-left p-10 flex flex-col gap-5 mt-10 bg-gradient-to-t from-primary from-20% to-secondary">
-        <div className="text-sm">Contact us</div>
+        <div className="text-sm">Contact Us</div>
         <div className="text-3xl font-bold">You have anything to ask?</div>
         <div className=" w-full flex flex-col gap-2 ">
           <input
@@ -53,7 +54,14 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-fill bg-primary h-1 my-5"></div>
-        <div className="">How does it mean to fix the following</div>
+        <div className="flex flex-rol items-center gap-4">
+          <TfiAngleDoubleRight />{" "}
+          <div className=" text-10 font-bold">Name of Commenter</div>
+        </div>{" "}
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          quam, laboriosam eaque autem dolorem, !
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
+import { FaRocketchat } from "react-icons/fa";
 import { Button } from "../ui/button";
 
 const Services = () => {
   return (
     <div
       id="services"
-      className="w-full h-[40rem] bg-secondary text-white flex flex-col justify-center align-bottom items-center"
+      className="w-full h-[40rem] bg-secondary rounded-t-3xl text-white flex flex-col justify-center align-bottom items-center"
     >
       <div className="w-[90%] h-[80%]  flex flex-col gap-10 mt-10 ">
         <div className="w-full flex flex-row justify-center align-middle items-center ">
@@ -22,10 +23,54 @@ const Services = () => {
         </div>
 
         <div className="w-full h-[20rem]  flex flex-row p-5 justify-between">
-          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl mt-[5rem]"></div>
-          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl"></div>
-          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl"></div>
-          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl mt-[5rem]"></div>
+          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl mt-[5rem] text-primary">
+            <div className="w-full m-auto h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  mt-10 p-2">
+              <div className="text-secondary mb-3">
+                <FaRocketchat size="30px" />{" "}
+              </div>
+              <div className="font-bold">Start Chat</div>
+              <div className="text-sm  ">
+                Quickly start a conversation with expact AI Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+              </div>
+            </div>
+          </div>
+          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl  text-primary">
+            <div className="w-full m-auto h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  mt-10 p-2">
+              <div className="text-secondary mb-3">
+                <FaRocketchat size="30px" />{" "}
+              </div>
+              <div className="font-bold">Start Chat</div>
+              <div className="text-sm  ">
+                Quickly start a conversation with expact AI Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+              </div>
+            </div>
+          </div>
+          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl  text-primary">
+            <div className="w-full m-auto h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  mt-10 p-2">
+              <div className="text-secondary mb-3">
+                <FaRocketchat size="30px" />{" "}
+              </div>
+              <div className="font-bold">Start Chat</div>
+              <div className="text-sm  ">
+                Quickly start a conversation with expact AI Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+              </div>
+            </div>
+          </div>
+          <div className="w-[15rem] h-[17rem] shadow-md bg-white rounded-xl mt-[5rem]  text-primary">
+            <div className="w-full m-auto h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  mt-10 p-2">
+              <div className="text-secondary mb-3">
+                <FaRocketchat size="30px" />{" "}
+              </div>
+              <div className="font-bold">Start Chat</div>
+              <div className="text-sm  ">
+                Quickly start a conversation with expact AI Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+              </div>
+            </div>
+          </div>
         </div>
         <div className=" ">
           <Button className="w-[10rem] h-[3rem] hover:bg-white hover:text-primary">

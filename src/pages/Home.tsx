@@ -1,11 +1,11 @@
 import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+//import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import "./Styles.css";
 import img from "../assets/images/mdDOc.png";
 import About from "./About";
 import { ChevronRight } from "lucide-react";
-import { FaHandHoldingMedical, FaTruckMedical } from "react-icons/fa6";
+import { FaHandHoldingMedical } from "react-icons/fa6";
 import { FaNotesMedical } from "react-icons/fa";
 import { FaCommentMedical } from "react-icons/fa6";
 import kite from "../assets/images/kite.png";
@@ -16,6 +16,8 @@ import AiDocSection from "@/components/webSections/AiDocSection";
 import Pricing from "@/components/webSections/Pricing";
 import Contact from "../pages/Contact";
 import Services from "@/components/webSections/Services";
+import ChatSection from "@/components/webSections/ChatSection";
+import DailyHealthTips from "@/components/webSections/DailyHealthTips";
 
 const Home = () => {
   return (
@@ -95,6 +97,8 @@ const Home = () => {
       <GuideSteps />
       <Services />
       <AiDocSection />
+      <ChatSection />
+      <DailyHealthTips />
       <BookSection />
       <Pricing />
       <About />

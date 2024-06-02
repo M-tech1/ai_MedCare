@@ -9,6 +9,14 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px){...}
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+
     container: {
       center: true,
       padding: "2rem",
