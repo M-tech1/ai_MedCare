@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { TfiAngleDoubleRight } from "react-icons/tfi";
 
 const Contact = () => {

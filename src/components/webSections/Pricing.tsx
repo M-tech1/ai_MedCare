@@ -1,9 +1,8 @@
-// import React from "react";
-// import { Button } from "../ui/button";
-import { BiToggleLeft } from "react-icons/bi";
+
+// import { BiToggleLeft } from "react-icons/bi";
 import { FaCheckCircle } from "react-icons/fa";
 // import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
+// import { Switch } from "@/components/ui/switch";
 
 import { Button } from "@/components/ui/button";
 

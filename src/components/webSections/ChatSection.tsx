@@ -1,6 +1,6 @@
-import React from "react";
+
 import botchat from "../../assets/images/botchat.jpeg";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import QuickChat from "@/Functionalities/QuickChat";
 
 const ChatSection = () => {

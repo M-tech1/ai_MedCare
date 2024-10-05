@@ -41,7 +41,7 @@ const DailyHealthTips = () => {
 
         <Carousel className="shadow-md p-10 h-[15rem] ml-[10rem] mt-10 mr-[10rem] flex justify-center align-middle">
           <CarouselContent className="p-1 flex justify-center align-middle items-center">
-            {healthTips.map((tip, index) => (
+            {healthTips.map((tip) => (
               <CarouselItem key={tip.id}>
                 <h2 className="text-2xl">{tip.title}</h2>
                 <p>{tip.description}</p>
