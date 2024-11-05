@@ -23,23 +23,25 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="h-[100vh]  w-[5/6]">
-        <div className="flex flex-row mt-[2.5rem] relative top-[2rem]">
-          <div className="w-[100rem] h-[20rem] flex items-start flex-col">
-            <div className="w-[17rem] rotate-90">
+      <div className="h-[100vh] w-[5/6] ">
+        <div className="flex flex-row mt-[2.5rem] relative top-[2rem] sm:container">
+          <div className="w-[100rem] h-[20rem] flex items-start flex-col ">
+            <div className="w-[8rem]  rotate-90 sm:flex sm:w-[10rem] ">
               <img src={kite} />
             </div>
             {/* <div> calenda</div> */}
           </div>
           <div className="w-[100rem] h-[27rem flex items-start my-5">
             <div className="w-[25rem] h-full flex ml-10 justify-center flex-col items-start gap-7 align-middle">
-              <div className="text-[1.5rem] text-primary">Get Quick </div>
+              <div className="text-[1.5rem] text-primary flex md:text-base lg:text-lg">
+                Get Quick
+              </div>
               <div className="text-[1rem] font-bold text-primary">
                 <div className="typewriter text-primary">Medical Attention</div>
               </div>
               <p className="flex justify-start text-primary text-left">
                 Employ the best AI health diagnostic system to help diagnose
-                your health and wellness. Stay healthy today!...
+                your health and wellness. Stay healthy today!
               </p>
               <div className="flex flex-row justify-between gap-5">
                 <Button className="bg-primary  hover:bg-secondary hover:text-white">
@@ -55,11 +57,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[21rem] mt-[1rem] flex align-middle justify-center relative top-[2rem]">
-          <div className="w-6/7 h-full bg-secondary rounded-3xl flex flex-row justify-between items-center align-middle p-10 bg-gradient-to-r from-primary from-20% to-secondary">
+        <div className="w-full h-[21rem] mt-[1rem] flex align-middle justify-center relative top-[2rem] ">
+          <div className="w-6/7 h-full bg-secondary  rounded-3xl flex flex-row justify-between items-center align-middle p-10 bg-gradient-to-r from-primary from-20% to-secondary">
             <div className="w-[35rem] h-[20rem] flex items-center justify-center  ">
               <img
-                className="relative left-[7rem] bottom-[10rem] h-[45rem]"
+                className="h-[80%] sm:h-[200%] sm:left-[7rem] left-[15rem] button-[0rem] relative sm:bottom-[10rem] "
                 src={img}
               />
             </div>
@@ -89,7 +91,7 @@ const Home = () => {
             </div>
             <div className="w-[7rem] h-[15rem] bg-primary rounded-3xl flex flex-col align-middle items-center justify-center text-white hover:bg-transparent hover:text-primary hover:border-solid scroll-smooth hover:border-solid border-2 border-primary ">
               <ChevronRight className="h-5 w-5" />
-              <div>Check </div>
+              <div>Check</div>
             </div>
           </div>
         </div>
