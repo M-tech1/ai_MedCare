@@ -13,7 +13,7 @@ const aiDocSection = () => {
       <div className=" h-full shadow-2xl">
         <div className=" p-2 flex flex-col text-left justify-start sm:px-10  gap-5">
           <div>Find an available doctor for your issue</div>
-          <div className="text-3xl font-bold">
+          <div className="sm:text-3xl text-xl font-bold">
             {" "}
             Consult with a doctor by Searching from anywhere
           </div>

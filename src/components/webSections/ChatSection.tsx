@@ -22,8 +22,8 @@ const ChatSection = () => {
         </div>
       </div>
 
-      <div className="mx-5 h-full bg-lite border shadow-lg rounded-md flex justify-self align-middle">
-        <div className="w-[90%]  h-[90%] m-auto shadow-md bg-white  rounded-sm">
+      <div className="sm:mx-5 mx-2 h-full bg-lite border shadow-lg rounded-md flex justify-self align-middle">
+        <div className="w-full h-full m-auto shadow-md bg-white  rounded-sm bg-red-300">
           <QuickChat />
         </div>
       </div>

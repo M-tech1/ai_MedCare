@@ -51,13 +51,13 @@ const QuickChat = () => {
 
   return (
     <>
-      <div className="flex flex-col  h-full w-full ">
+      <div className="flex flex-col  h-full w-full  ">
         {/* <!-- Header --> */}
         <div className="bg-gray-800 text-white py-4 sm:px-6 flex items-center text-center justify-between">
           <h1 className="text-l font-bold">Welcome to AI-MedCare Assist</h1>
         </div>
 
-        <div className="flex-1 overflow-y-auto sm:p-4">
+        <div className="flex-1 overflow-y-auto sm:p-4 ">
           <div className="flex-1 overflow-y-auto p-4" id="chat">
             {chat.map((message, index) => (
               <div

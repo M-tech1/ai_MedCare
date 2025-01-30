@@ -11,6 +11,8 @@ export default function MainLayout() {
         </div>
         <div className="">
           <Outlet />
+        </div>
+        <div className="mt-20">
           <Footer />
         </div>
       </div>

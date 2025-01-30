@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <>
-      <footer className="bg-primary w-full mt-20">
+      <footer className="bg-primary w-full px-1">
         <div className="footer bg-bg-variant text-white py-12">
-          <div className="footer-content max-w-7xl mx-auto flex justify-around">
-            <div className="footer-section flex-1 px-4">
+          <div className="footer-content mx-auto flex justify-around">
+            <div className="footer-section flex-1 px-2">
               <h2 className="text-blue-500">About Us</h2>
               <p className="text-sm">
                 We are committed to providing high-quality healthcare services

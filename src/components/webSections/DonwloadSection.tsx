@@ -6,7 +6,7 @@ const DonwloadSection = () => {
   return (
     <div className="w-full h-full grid sm:grid-cols-2 grid-cols-1 mt-20 ">
       <div className=" w-full h-full  flex items-center justify-center align-middle ">
-        <div className="w-[25rem] h-[25rem] rounded-full bg-blue-50 ">
+        <div className="w-[20rem] h-[20rem] rounded-full bg-blue-50 ">
           <div className="relative bottom-[3rem] w-[20rem] ">
             <img src={kite} />
           </div>
