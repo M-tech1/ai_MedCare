@@ -46,26 +46,26 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="sm:w-full sm:h-[21rem] sm:mt-[1rem] m-0 flex align-middle justify-center w-[100vw] ">
-          <div className="sm:w-[80rem] w-[100vw] h-full m-2 rounded-3xl flex flex-row gap-2 items-center align-middle sm:p-10 p-0  bg-gradient-to-r from-primary from-20% to-secondary ">
-            <div className="w-[35rem] h-[20rem] flex items-center justify-center hidden sm:block ">
+        <div className="sm:w-full sm:h-[21rem] sm:mt-[1rem] flex align-middle justify-center w-[100vw] ">
+          <div className="sm:w-[80rem] w-[100vw] h-full m-2 rounded-3xl flex flex-row gap-2 items-center align-middle sm:p-10 p-0  bg-gradient-to-r from-primary from-20% to-secondary sm:mt-[0] mt-[10rem]">
+            <div className="sm:w-[35rem] sm:h-[20rem] w-[10rem] h-[15rem] flex items-center justify-center ">
               <img
                 src={img}
-                className="absolute top-[14rem] left-[18%] h-[40rem] "
+                className="absolute sm:top-[14rem] top-[33rem] sm:left-[18%]  sm:h-[40rem] h-[25rem] "
               />
             </div>
-            <div className=" sm:w-[32rem] sm:h-[18rem] w-full mt-5 p-5 flex flex-col align-middle sm:items-stretch items-center  justify-center">
+            <div className=" sm:w-[32rem] w-[20rem] sm:h-[18rem] mt-5 p-5 flex flex-col align-middle sm:items-stretch items-center  justify-center">
               <div className="w-[20rem] h-full flex flex-col ">
-                <div className="text-white mb-5 text-xl font-semibold">
+                <div className="text-white mb-5 text-xl px-5 font-semibold">
                   Martins, how're you feeling?
                 </div>
-                <p className="text-white text-[13px] flex justify-center text-left align-middle">
+                <p className="text-white text-[13px] px-5 flex justify-center text-left align-middle">
                   {" "}
                   Your well-being is of utmost importance, and we're here to
                   assist you. Please feel comfortable sharing your thoughts and
                   concerns with us.
                 </p>
-                <div className="flex flex-row mt-8 justify-between">
+                <div className="flex flex-row mt-8 gap-5 px-5">
                   <div className="bg-secondary shadow-md w-[5rem] h-[5rem] rounded-2xl flex justify-center items-center">
                     <FaHandHoldingMedical size={30} color="white" />
                   </div>
