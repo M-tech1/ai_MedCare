@@ -12,14 +12,14 @@ export default function Hero() {
   return (
     <>
       <div className="h-full w-full sm:p-5">
-        <div className="flex sm:flex-row flex-col max-w-[80vw] justify-self-center ">
+        <div className="flex sm:flex-row flex-col  justify-self-center">
           <div className=" flex items-start flex-col ">
             <div className=" rotate-90 sm:flex w-[12rem] sm:absolute left-[20rem]">
               <img src={kite} />
             </div>
             {/* <div> calenda</div> */}
           </div>
-          <div className="sm:w-[50rem] w-full flex  h-[27rem] sm:items-start sm:my-5 sm:ml-[35rem]  ">
+          <div className="sm:w-[40rem] w-full flex  h-[20rem] sm:items-start sm:my-5 sm:ml-[35rem]">
             <div className="sm:w-[25rem] sm:mt-10 sm:mr-20 w-full h-full flex justify-center items-center flex-col gap-7 ">
               <div className="text-[1.5rem] text-primary flex md:text-base lg:text-lg">
                 Get Quick
@@ -51,13 +51,13 @@ export default function Hero() {
             <div className="sm:w-[35rem] sm:h-[20rem] w-[10rem] h-[15rem] flex items-center justify-center ">
               <img
                 src={img}
-                className="absolute sm:top-[14rem] top-[33rem] sm:left-[18%]  sm:h-[40rem] h-[25rem] "
+                className="z-1 absolute sm:top-[10rem] top-[29rem] sm:left-[18%] left-[-4rem]  sm:h-[40rem] h-[22rem] "
               />
             </div>
-            <div className=" sm:w-[32rem] w-[20rem] sm:h-[18rem] mt-5 p-5 flex flex-col align-middle sm:items-stretch items-center  justify-center">
-              <div className="w-[20rem] h-full flex flex-col ">
+            <div className="z-10 sm:w-[25rem] w-[20rem] sm:h-[18rem] sm:mt-5 mt-1 sm:p-5 p-1 flex flex-col align-middle sm:items-stretch items-center  justify-center ">
+              <div className="sm:w-[20rem] w-[15rem] h-full flex flex-col ">
                 <div className="text-white mb-5 text-xl px-5 font-semibold">
-                  Martins, how're you feeling?
+                  How're you feeling?
                 </div>
                 <p className="text-white text-[13px] px-5 flex justify-center text-left align-middle">
                   {" "}
@@ -65,14 +65,14 @@ export default function Hero() {
                   assist you. Please feel comfortable sharing your thoughts and
                   concerns with us.
                 </p>
-                <div className="flex flex-row mt-8 gap-5 px-5">
-                  <div className="bg-secondary shadow-md w-[5rem] h-[5rem] rounded-2xl flex justify-center items-center">
+                <div className="flex flex-row mt-8 gap-5 px-3">
+                  <div className="bg-secondary shadow-md sm:w-[5rem] w-[4rem] h-[4rem] sm:h-[5rem] rounded-2xl flex justify-center items-center">
                     <FaHandHoldingMedical size={30} color="white" />
                   </div>
-                  <div className="bg-secondary shadow-md w-[5rem] h-[5rem] rounded-2xl flex justify-center items-center">
+                  <div className="bg-secondary shadow-md sm:w-[5rem] w-[4rem] h-[4rem] sm:h-[5rem] rounded-2xl flex justify-center items-center">
                     <FaNotesMedical size={30} color="white" />
                   </div>
-                  <div className="bg-secondary shadow-md w-[5rem] h-[5rem] rounded-2xl flex justify-center items-center">
+                  <div className="bg-secondary shadow-md sm:w-[5rem] w-[4rem] h-[4rem] sm:h-[5rem]  rounded-2xl flex justify-center items-center">
                     <FaCommentMedical size={30} color="white" />
                   </div>
                 </div>
