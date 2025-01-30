@@ -1,5 +1,4 @@
 import "./Styles.css";
-import About from "./About";
 import DonwloadSection from "@/components/webSections/DonwloadSection";
 import GuideSteps from "@/components/webSections/GuideSteps";
 import BookSection from "@/components/webSections/BookSection";

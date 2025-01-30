@@ -11,7 +11,7 @@ import { Button } from "../ui/button";
 export default function Hero() {
   return (
     <>
-      <div className="h-[full] w-[full] sm:p-5">
+      <div className="h-full w-full sm:p-5">
         <div className="flex sm:flex-row flex-col max-w-[80vw] justify-self-center ">
           <div className=" flex items-start flex-col ">
             <div className=" rotate-90 sm:flex w-[12rem] sm:absolute left-[20rem]">
