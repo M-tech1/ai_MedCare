@@ -34,12 +34,13 @@ const DailyHealthTips = () => {
   ];
 
   return (
-    <div className="w-full h-[25rem]">
-      Daily
+    <div className="w-full h-[25rem] container mt-10">
       <div className="health-tips-slider flex flex-col" id="health_tips">
-        <div className=" text-2xl font-bold">Health Tips </div>
+        <div className="sm:pl-10 ml-5">
+          Daily<div className=" text-2xl font-bold">Health Tips </div>
+        </div>
 
-        <Carousel className="shadow-md p-10 h-[15rem] ml-[10rem] mt-10 mr-[10rem] flex justify-center align-middle">
+        <Carousel className="shadow-md sm:p-10 mx-5 flex justify-center align-middle">
           <CarouselContent className="p-1 flex justify-center align-middle items-center">
             {healthTips.map((tip) => (
               <CarouselItem key={tip.id}>

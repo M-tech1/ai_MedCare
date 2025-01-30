@@ -10,7 +10,8 @@ const QuickChat = () => {
   const [chat, setChat] = useState<Message[]>([
     {
       role: "system",
-      content: "Get started with ai-MedCare. just explain how you feel.",
+      content:
+        "Get started with ai-MedCare. Lets have a quick one: just explain how you feel.",
     },
   ]);
 
@@ -50,15 +51,13 @@ const QuickChat = () => {
 
   return (
     <>
-      <div className="flex flex-col  h-[100%]">
+      <div className="flex flex-col  h-full w-full ">
         {/* <!-- Header --> */}
-        <div className="bg-gray-800 text-white py-4 px-6 flex items-center justify-between">
-          <div className="flex items-center">
-            <h1 className="text-xl font-bold">Welcome to AI-MedCare Assist</h1>
-          </div>
+        <div className="bg-gray-800 text-white py-4 sm:px-6 flex items-center text-center justify-between">
+          <h1 className="text-l font-bold">Welcome to AI-MedCare Assist</h1>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 overflow-y-auto sm:p-4">
           <div className="flex-1 overflow-y-auto p-4" id="chat">
             {chat.map((message, index) => (
               <div

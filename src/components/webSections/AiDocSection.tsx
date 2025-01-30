@@ -4,13 +4,18 @@ import { Button } from "../ui/button";
 import { FaCheckCircle } from "react-icons/fa";
 const aiDocSection = () => {
   return (
-    <div className="w-full h-[35rem] flex flex-row justify-between p-5 mt-[1rem]">
-      <div className="w-1/2 h-full  shadow-2xl">
-        <div className="w-2/3 p-2 flex flex-col text-left justify-start m-[4rem] gap-5">
-          <div>Find a doctor</div>
+    <div className="w-full h-[] grid sm:grid-cols-2 grid-cols-1 p-5 mt-[1rem]">
+      <div className="w-10/123 h-full align-middle justify-center">
+        <div className="w-full h-full flex align-middle justify-center">
+          <img className="w-full rounded-tl-3xl shadow-md" src={img} />
+        </div>
+      </div>
+      <div className=" h-full shadow-2xl">
+        <div className=" p-2 flex flex-col text-left justify-start sm:px-10  gap-5">
+          <div>Find an available doctor for your issue</div>
           <div className="text-3xl font-bold">
             {" "}
-            Consult a doctor my Search From anywhere
+            Consult with a doctor by Searching from anywhere
           </div>
           <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odio
@@ -21,10 +26,22 @@ const aiDocSection = () => {
           <div>
             {" "}
             <div className="flex flex-row  items-center  text-primary gap-3">
-              <FaCheckCircle /> <div>List one</div>
+              <FaCheckCircle /> <div>General Practitioner (GP)</div>
             </div>
             <div className="flex flex-row  items-center  text-primary gap-3">
-              <FaCheckCircle /> <div>List one</div>
+              <FaCheckCircle /> <div>Neurosurgeon</div>
+            </div>
+            <div className="flex flex-row  items-center  text-primary gap-3">
+              <FaCheckCircle /> <div>Orthopedic Surgeon</div>
+            </div>
+            <div className="flex flex-row  items-center  text-primary gap-3">
+              <FaCheckCircle /> <div>Cardiothoracic Surgeon</div>
+            </div>
+            <div className="flex flex-row  items-center  text-primary gap-3">
+              <FaCheckCircle /> <div>Ophthalmic Surgeon</div>
+            </div>
+            <div className="flex flex-row  items-center  text-primary gap-3">
+              <FaCheckCircle /> <div>Cardiologist </div>
             </div>
           </div>
 
@@ -34,11 +51,6 @@ const aiDocSection = () => {
               Check here
             </Button>
           </div>
-        </div>
-      </div>
-      <div className="w-10/123 h-full align-middle justify-center">
-        <div className="w-full h-full flex align-middle justify-center">
-          <img className="w-full rounded-tl-3xl shadow-md" src={img} />
         </div>
       </div>
     </div>

@@ -5,10 +5,10 @@ import { ChevronRight } from "lucide-react";
 
 const BookSection = () => {
   return (
-    <div className="w-full h-[20rem] flex flex-row justify-between mt-[10rem] mb-[10rem]">
-      <div className="w-1/2 h-full bg-lite flex justify-center items-center rounded-l-2xl">
-        <div className=" w-[25rem] flex flex-col text-left gap-5">
-          <h1 className="text-5xl font-bold ">
+    <div className="w-full h-full flex sm:flex-row flex-col mt-[10rem] container  sm:px-20">
+      <div className=" h-full  flex justify-center items-center rounded-l-2xl">
+        <div className=" sm:w-[70%] w-full flex flex-col text-left gap-5">
+          <h1 className="text-2xl font-bold ">
             Get started with aiMedcare today
           </h1>
           <p>
@@ -18,15 +18,15 @@ const BookSection = () => {
             ab doloribus!
           </p>
           <div className="">
-            <Button className="w-1/2 h-[3.5rem] rounded-tl-1 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl hover:bg-secondary hover:text-white ">
+            <Button className=" hover:bg-secondary hover:text-white ">
               Book now
               <ChevronRight className="ml-4" />
             </Button>
           </div>
         </div>
       </div>
-      <div className="w-1/2 h-full bg-lite">
-        <div className="relative bottom-[6.3rem]  size-[50rem]">
+      <div className=" h-full ">
+        <div className="mt-10 left-[6rem] size-[19rem]">
           <img src={aidoc} />
         </div>
       </div>

@@ -1,17 +1,4 @@
-// import React, { useState } from "react";
-// import { Button } from "./ui/button";
-
 const NavBar = () => {
-  // const [open, setOpen] = useState<boolean>(false);
-  // const toggleDropdown = (state: boolean) => {
-  //   setOpen(!state);
-
-  //   const [isOpen, setIsOpen] = useState(false);
-  //   const toggleDropdown = () => {
-  //     setIsOpen(!isOpen);
-  //   };
-  // };
-
   return (
     <>
       {/* <nav className="bg-white border-gray-200 dark:bg-gray-900 bg-white border-gray-200 dark:border"> */}

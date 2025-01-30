@@ -4,9 +4,9 @@ import devices from "../../assets/images/devices.png";
 
 const DonwloadSection = () => {
   return (
-    <div className="w-full h-[40rem]  flex flex-row justify-between">
-      <div className="w-1/2 h-full  flex items-center justify-center align-middle ">
-        <div className="w-[30rem] h-[30rem] rounded-full bg-blue-50 ">
+    <div className="w-full h-full grid sm:grid-cols-2 grid-cols-1 mt-20 ">
+      <div className=" w-full h-full  flex items-center justify-center align-middle ">
+        <div className="w-[25rem] h-[25rem] rounded-full bg-blue-50 ">
           <div className="relative bottom-[3rem] w-[20rem] ">
             <img src={kite} />
           </div>
@@ -17,10 +17,10 @@ const DonwloadSection = () => {
       </div>
 
       {/* ********* right div ********* */}
-      <div className="w-1/2 h-full bg-primary-100">
-        <div className="p-10 flex flex-col text-left justify-start mt-[7rem]">
+      <div className=" w-full h-full bg-primary-100 ">
+        <div className="p-10 flex flex-col text-left justify-start sm:mt-[3rem]">
           <div className="text-xl"> Download App</div>
-          <div className="text-5xl font-bold mt-2">
+          <div className="text-3xl font-bold mt-2  text-left">
             We are available on all devices
           </div>
           <div className="mt-5 ">
