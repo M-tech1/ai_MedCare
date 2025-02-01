@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer className="bg-primary w-full px-1">
+      <footer className="bg-primary w-full">
         <div className="footer bg-bg-variant text-white py-12">
           <div className="footer-content mx-auto flex justify-around">
             <div className="footer-section flex-1 px-2">
@@ -17,12 +17,12 @@ const Footer = () => {
                 {" "}
                 Medical Center <br />
                 123 Health Street <br />
-                Cityville, Medical Country <br />
-                Email: info@medicalcenter.com <br />
-                Phone: +1 (555) 123-4567
+                Abuja, Nigeria <br />
+                Email: info@aimedcare.com <br />
+                Phone: +2348065191675
               </p>
             </div>
-            <div className="footer-section flex-1 px-4">
+            {/* <div className="footer-section flex-1 px-4">
               <h2 className="text-blue-500">Appointments</h2>
               <p className="text-sm">
                 {" "}
@@ -32,7 +32,7 @@ const Footer = () => {
               <button className="btn-appointment bg-blue-500 text-white py-2 px-4 rounded cursor-pointer text-sm transition duration-300 hover:bg-blue-600">
                 Schedule Now
               </button>
-            </div>
+            </div> */}
           </div>
           <div className="footer-bottom mt-4"></div>
         </div>

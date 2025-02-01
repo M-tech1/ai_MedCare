@@ -1,14 +1,35 @@
+import { ReactNode, useState } from "react";
+import { NavLink } from "react-router-dom";
+
+interface INav {
+  link: string;
+  label: string;
+}
+
+const NavMenu: INav[] = [
+  {
+    link: "/",
+    label: "home",
+  },
+  {
+    link: "#services",
+    label: "about",
+  },
+  {
+    link: "#price",
+    label: "contact",
+  },
+];
+
 const NavBar = () => {
   return (
     <>
-      {/* <nav className="bg-white border-gray-200 dark:bg-gray-900 bg-white border-gray-200 dark:border"> */}
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            {/* <img className="h-8" alt="Flowbite Logo" /> */}
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               ai-MedCare
             </span>
@@ -21,14 +42,10 @@ const NavBar = () => {
               aria-expanded="false"
               data-dropdown-toggle="user-dropdown"
               data-dropdown-placement="bottom"
-              //   onClick={(e = toggleDropdown(isOpen)) => {}}
-              // onClick={(e) => toggleDropdown(open)}
             >
               <span className="sr-only bg-black">Open user menu</span>
               <img className="w-8 h-8 rounded-full" alt="user photo" />
             </button>
-
-            {/* <Button onClick={(e) => toggleDropdown}>click</Button> */}
 
             <div
               className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
@@ -86,21 +103,6 @@ const NavBar = () => {
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
-              {/* <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg> */}
             </button>
           </div>
 
@@ -118,14 +120,7 @@ const NavBar = () => {
                   Home
                 </a>
               </li>
-              <li>
-                <a
-                  href="#about"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  About
-                </a>
-              </li>
+
               <li>
                 <a
                   href="#services"
@@ -148,6 +143,14 @@ const NavBar = () => {
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#quick-chat"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Quick Chart
                 </a>
               </li>
             </ul>

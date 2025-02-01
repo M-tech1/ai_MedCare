@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-full bg-lite grid sm:grid-cols-2 grid-cols-1 gap-5 sm:p-20 sm:my-10 m-0 m-2"
+      className="w-full h-full bg-lite grid sm:grid-cols-2 grid-cols-1 gap-5 sm:p-20 sm:my-10 m-2"
     >
       <div className="w-full h-full shadow-2xl p-10 text-left mt-10">
         <div className="flex flex-col gap-5">
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="sm:w-[35rem] w-full h-full bg-primary rounded-xl text-white text-left sm:p-10 p-2 flex flex-col gap-5 mt-10 bg-gradient-to-t from-primary from-20% to-secondary">
+      <div className=" w-full h-full bg-primary rounded-xl text-white text-left sm:p-10 p-2 flex flex-col gap-5 mt-10 bg-gradient-to-t from-primary from-20% to-secondary">
         <div className="text-sm">Contact Us</div>
         <div className="text-3xl font-bold">You have anything to ask?</div>
         <div className=" w-full flex flex-col gap-2">
