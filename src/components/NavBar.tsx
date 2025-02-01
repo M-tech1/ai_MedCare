@@ -1,26 +1,3 @@
-import { ReactNode, useState } from "react";
-import { NavLink } from "react-router-dom";
-
-interface INav {
-  link: string;
-  label: string;
-}
-
-const NavMenu: INav[] = [
-  {
-    link: "/",
-    label: "home",
-  },
-  {
-    link: "#services",
-    label: "about",
-  },
-  {
-    link: "#price",
-    label: "contact",
-  },
-];
-
 const NavBar = () => {
   return (
     <>
