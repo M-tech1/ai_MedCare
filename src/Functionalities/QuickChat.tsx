@@ -4,9 +4,40 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const genAI = new GoogleGenerativeAI("AIzaSyCi1kLWy3Oj_R9n1O4xTkthOSZnmVGAHmM");
 
 const QuickChat = () => {
-  // const [responseText, setResponseText] = useState<string>("");
+  interface StructuredText {
+    category: string;
+    items: (string | { subcategory: string; description: string })[];
+  }
 
+  function parseText(text: string): StructuredText[] {
+    const sections = text.split("**").filter(Boolean);
+    const result: StructuredText[] = [];
+
+    for (let i = 0; i < sections.length; i += 2) {
+      const category = sections[i].trim().replace(/:$/, "");
+      const items = sections[i + 1]
+        .split("*")
+        .map((item) => item.trim())
+        .filter((item) => item)
+        .map((item) => {
+          const match = item.match(/\*\*(.*?)\*\*/);
+          if (match) {
+            return {
+              subcategory: match[1],
+              description: item.replace(match[0], "").trim(),
+            };
+          }
+          return item;
+        });
+
+      result.push({ category, items });
+    }
+    return result;
+  }
+
+  // const [responseText, setResponseText] = useState<string>("");
   const [prompt, setPrompt] = useState<string>("");
+
   const [chat, setChat] = useState<Message[]>([
     {
       role: "system",
@@ -21,7 +52,7 @@ const QuickChat = () => {
   ) => {
     setChat((prevChat) => [...prevChat, { role, content }]);
   };
-
+  // console.log("chat prompt", addMessage);
   interface Message {
     role: "system" | "user" | "assistant";
     content: string;
@@ -40,9 +71,11 @@ const QuickChat = () => {
       const result = await model.generateContent(prompt);
       const response = await result.response;
       const text = await response.text();
+
       addMessage("user", prompt);
       addMessage("assistant", text);
       setPrompt("");
+      // console.log("testing", parseText(text));
     } catch (error) {
       console.error("Error generating response:", error);
       addMessage("system", "Error generating response. Please try again.");
@@ -77,6 +110,7 @@ const QuickChat = () => {
                       : "bg-gray-700 text-white"
                   } mt-3 flex text-left rounded-lg rounded-tr-none py-2 px-4 max-w-sm`}
                 >
+                  {/* {parseText(message.content)}  */}
                   {message.content}
                 </div>
               </div>

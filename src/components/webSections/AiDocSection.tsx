@@ -1,6 +1,6 @@
 // import React from "react";
 import img from "../../assets/images/aitreat.jpeg";
-import { Button } from "../ui/button";
+import { Button } from "../ui/button/button";
 import { FaCheckCircle } from "react-icons/fa";
 const aiDocSection = () => {
   return (

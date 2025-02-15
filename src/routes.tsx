@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "./layouts";
+import MainLayout from "./layouts/homePageLayout";
 import Home from "./pages/Home";
-import PageNotFound from "./components/404";
+import PageNotFound from "./pages/404-page";
+import { DashboardLayout } from "./layouts/dashboardLayout";
 
 export const routes = createBrowserRouter([
   {
@@ -14,6 +15,17 @@ export const routes = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "",
+        element: <div>testing</div>,
+      },
+    ],
+  },
+
   {
     path: "*",
     element: <PageNotFound />,

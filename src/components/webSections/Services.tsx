@@ -1,5 +1,5 @@
 import { FaRocketchat } from "react-icons/fa";
-import { Button } from "../ui/button";
+import { Button } from "../ui/button/button";
 
 const Services = () => {
   return (

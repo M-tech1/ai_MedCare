@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button/button";
 import img2 from "../assets/images/Medinjection.png";
 import { FaClinicMedical } from "react-icons/fa";
 import { FaTruckMedical } from "react-icons/fa6";

@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 // import { Label } from "@/components/ui/label";
 // import { Switch } from "@/components/ui/switch";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button/button";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -15,7 +15,7 @@ const Pricing = () => {
           <div className="m-3 text-3xl text-primary font-bold"> Pricing</div>
         </div>
 
-        <Tabs defaultValue="month" className=" ">
+        <Tabs defaultValue="month" className="">
           <TabsList className="flex flex-row ">
             <TabsTrigger value="month">Monthly</TabsTrigger>
             <TabsTrigger value="year">Yearly</TabsTrigger>

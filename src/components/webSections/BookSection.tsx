@@ -1,5 +1,5 @@
 // import React from "react";
-import { Button } from "../ui/button";
+import { Button } from "../ui/button/button";
 import aidoc from "../../assets/images/aichatdoctor.png";
 import { ChevronRight } from "lucide-react";
 

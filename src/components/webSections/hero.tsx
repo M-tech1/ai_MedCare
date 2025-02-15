@@ -6,9 +6,46 @@ import {
 } from "react-icons/fa";
 import kite from "../../assets/images/kite.png";
 import img from "../../assets/images/mdDOc.png";
-import { Button } from "../ui/button";
+import { Button } from "../ui/button/button";
+
+import Modal from "../ui/modal";
+import { useState } from "react";
+import Form from "../ui/forms/form";
+
+export interface set {
+  value: string;
+  setValue: () => void;
+}
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
+  const formFields = [
+    { name: "name", label: "Full Name", type: "text", required: true },
+    { name: "email", label: "Email Address", type: "email", required: true },
+    {
+      name: "message",
+      label: "Your Message",
+      type: "textarea",
+      required: true,
+      placeholder: "Write your message here...",
+    },
+    {
+      name: "role",
+      label: "Select Your Role",
+      type: "select",
+      required: true,
+      options: [
+        { value: "developer", label: "Developer" },
+        { value: "designer", label: "Designer" },
+        { value: "manager", label: "Manager" },
+      ],
+    },
+  ];
+
+  // const handleFormSubmit = (values: Record<string, string>) => {
+  //   console.log("Form submitted:", values);
+  // };
   return (
     <>
       <div className="h-full w-full sm:p-5 flex flex-col justify-between">
@@ -33,20 +70,21 @@ export default function Hero() {
               </p>
               <div className="flex flex-row justify-between gap-5">
                 <Button className="bg-primary  hover:bg-secondary hover:text-white">
-                  Get started
+                  Quick insight
                 </Button>
                 <Button
+                  onClick={() => setOpen(true)}
                   className="bg-transparent text-primary hover:bg-secondary hover:text-white border-solid border-2 border-secondary"
                   variant="outline"
                 >
-                  Book Appointment
+                  Get Started
                 </Button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="sm:w-full bg-red sm:h-[21rem] sm:mt-[1rem] flex align-middle justify-center w-[100vw]  ">
+        <div className="sm:w-full bg-red sm:h-[21rem] sm:mt-[1rem] flex align-middle justify-center w-[100vw] ">
           <div className="sm:w-[80%] w-[100vw] h-full m-2 rounded-3xl flex flex-row gap-2 items-center align-middle sm:p-10 p-0  bg-gradient-to-r from-primary from-20% to-secondary sm:mt-[0] mt-[10rem]">
             <div className="sm:w-[35rem] sm:h-[20rem] w-[10rem] h-[15rem] flex items-center justify-center ">
               <img
@@ -54,6 +92,7 @@ export default function Hero() {
                 className="z-1 absolute sm:top-[10rem] top-[29rem] sm:left-[18%] left-[-4rem]  sm:h-[40rem] h-[22rem] "
               />
             </div>
+            ,
             <div className="z-10 sm:w-[25rem] w-[20rem] sm:h-[18rem] sm:mt-5 mt-1 sm:p-5 p-1 flex flex-col align-middle sm:items-stretch items-center  justify-center ">
               <div className="sm:w-[20rem] w-[15rem] h-full flex flex-col ">
                 <div className="text-white mb-3 text-xl px-5 font-semibold">
@@ -85,6 +124,45 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <Modal
+        open={open}
+        handleClose={() => setOpen(false)}
+        // children={undefined}
+        title="Login"
+        message="Are you sure you want to proceed?"
+      >
+        {/* <Form /> */}
+        <Form
+          onSubmit={function (values: Record<string, string>): void {}}
+          fields={[
+            { name: "name", label: "Full Name", type: "text", required: true },
+            {
+              name: "email",
+              label: "Email Address",
+              type: "email",
+              required: true,
+            },
+            {
+              name: "message",
+              label: "Your Message",
+              type: "textarea",
+              required: true,
+              placeholder: "Write your message here...",
+            },
+            {
+              name: "role",
+              label: "Select Your Role",
+              type: "select",
+              required: true,
+              options: [
+                { value: "developer", label: "Developer" },
+                { value: "designer", label: "Designer" },
+                { value: "manager", label: "Manager" },
+              ],
+            },
+          ]}
+        />
+      </Modal>
     </>
   );
 }
