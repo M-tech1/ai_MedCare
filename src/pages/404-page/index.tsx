@@ -1,4 +1,4 @@
-import PgNotFound from "../../assets/images/404-error.webp";
+import device from "../../assets/images/devices.png";
 import { Link } from "react-router-dom";
 
 export default function PageNotFound() {
@@ -8,11 +8,11 @@ export default function PageNotFound() {
         <div className="text-center">
           <h1 className="text-6xl font-bold text-gray-800">404</h1>
           <p className="mt-4 text-xl text-gray-600">Oops! Page not found.</p>
-          <p className="mt-2 text-gray-500">
+          <small className="mt-2 text-gray-500">
             The page you are looking for doesn't exist or has been moved.
-          </p>
+          </small>
           <img
-            src={PgNotFound}
+            src={device}
             alt="404 illustration"
             className="mx-auto mt-6 rounded-lg shadow-md sm:w-[20rem]"
           />

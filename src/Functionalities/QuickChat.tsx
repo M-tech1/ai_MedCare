@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-// const genAI = new GoogleGenerativeAI("AIzaSyAKcQ-z8x02xVTGTLFj4YvggaEW1-DsyEU");
-const genAI = new GoogleGenerativeAI("AIzaSyCi1kLWy3Oj_R9n1O4xTkthOSZnmVGAHmM");
+// const genAI = new GoogleGenerativeAI("AIzaSyCi1kLWy3Oj_R9n1O4xTkthOSZnmVGAHmM");
+const genAI = new GoogleGenerativeAI("AIzaSyBmm-b1cpe4kSa8BTRdp87evmmhxT_tnGg");
 
 const QuickChat = () => {
   interface StructuredText {

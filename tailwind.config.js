@@ -9,6 +9,11 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      mon: ["Montserrat", "serif"],
+      yrsa: ["Yrsa", "serif"],
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px){...}

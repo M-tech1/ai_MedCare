@@ -15,9 +15,7 @@ const Footer = () => {
               <h2 className="text-blue-500">Contact Us</h2>
               <p className="text-sm">
                 {" "}
-                Medical Center <br />
-                123 Health Street <br />
-                Abuja, Nigeria <br />
+                Medical Center 123 Health Street Abuja, Nigeria <br />
                 Email: info@aimedcare.com <br />
                 Phone: +2348065191675
               </p>

@@ -1,5 +1,7 @@
-import { FaRocketchat } from "react-icons/fa";
-import { Button } from "../ui/button/button";
+import { MdOutlineMedicalInformation } from "react-icons/md";
+import { MdSupportAgent } from "react-icons/md";
+import { CiBookmarkCheck } from "react-icons/ci";
+import { MdContactEmergency } from "react-icons/md";
 
 const Services = () => {
   return (
@@ -12,87 +14,72 @@ const Services = () => {
           <div className=" text-3xl font-bold mb-6">
             About Us & Services we provide
           </div>
-          <div>
-            <ul className="text-left text-sm">
-              <li>
-                AiMedCare provides general medical information, such as
-                explanations of medical terms, descriptions of illnesses, and
-                first aid guidance Based on the symptoms provided,{" "}
-              </li>
-              <li>
-                Our Artificial Intelligent is able to offers a preliminary
-                health assessment or suggests possible conditions.
-              </li>
-              <li>
-                we provides information about common symptoms associated with
-                those conditions. If a user describes symptoms that indicate a
-                potentially life-threatening situation, we would emphasize
-                seeking immediate medical attention by booking an urgent session
-                with a professional
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="w-full grid sm:grid-cols-4 grid-cols-1  gap-5">
           <div className="w-full  shadow-md bg-slate-100 rounded-xl  text-primary">
             <div className="w-full h-[full] p-5 rounded-lg  flex flex-col items-start  mt-2 p-2">
               <div className="text-secondary mb-3 flex flex-row gap-5">
-                <FaRocketchat size="30px" />{" "}
-                <div className="font-bold">Start Chat</div>
+                <MdOutlineMedicalInformation size="30px" />{" "}
+                <div className="font-bold"> General Medical Information</div>
               </div>
 
               <div className="text-sm  ">
-                Quickly start a conversation with expact AI Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+                AiMedCare provides general medical information, such as
+                explanations of medical terms, descriptions of illnesses, and
+                first aid guidance.
               </div>
             </div>
           </div>
           <div className="w-full  shadow-md bg-slate-100 rounded-xl  text-primary">
             <div className="w-full h-[full] p-5 rounded-lg  flex flex-col items-start  mt-2 p-2">
               <div className="text-secondary mb-3 flex flex-row gap-5">
-                <FaRocketchat size="30px" />{" "}
-                <div className="font-bold">Start Chat</div>
+                <MdSupportAgent size="30px" />{" "}
+                <div className="font-bold"> Preliminary Health Assessment</div>
               </div>
 
               <div className="text-sm  ">
-                Quickly start a conversation with expact AI Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+                Based on the symptoms provided, our Artificial Intelligence
+                offers a preliminary health assessment or suggests possible
+                conditions.
               </div>
             </div>
           </div>
           <div className="w-full shadow-md bg-slate-100 rounded-xl  text-primary">
             <div className="w-full h-[full] p-5 rounded-lg  flex flex-col items-start  mt-2 p-2">
               <div className="text-secondary mb-3 flex flex-row gap-5">
-                <FaRocketchat size="30px" />{" "}
-                <div className="font-bold">Start Chat</div>
+                <CiBookmarkCheck size="30px" />{" "}
+                <div className="font-bold">Symptom Explanation</div>
               </div>
 
               <div className="text-sm  ">
-                Quickly start a conversation with expact AI Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+                We provide information about common symptoms associated with the
+                suggested conditions to help users better understand their
+                potential health issues.
               </div>
             </div>
           </div>
           <div className="w-full  shadow-md bg-slate-100 rounded-xl  text-primary">
-            <div className="w-full h-[full] p-5 rounded-lg  flex flex-col items-start  mt-2 p-2">
+            <div className="w-full h-[full] p-5 rounded-lg  flex flex-col items-start  mt-2">
               <div className="text-secondary mb-3 flex flex-row gap-5">
-                <FaRocketchat size="30px" />{" "}
-                <div className="font-bold">Start Chat</div>
+                <MdContactEmergency size="30px" />{" "}
+                <div className="font-bold">Emergency Response Guidance</div>
               </div>
 
               <div className="text-sm  ">
-                Quickly start a conversation with expact AI Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Doloremque eum voluptas
+                f a user describes symptoms that indicate a potentially
+                life-threatening situation, we emphasize seeking immediate
+                medical attention by booking an urgent session with a
+                professional.
               </div>
             </div>
           </div>
         </div>
-        <div className=" w-full ">
-          <Button className="flex justify-self-center w-[full] h-[3rem] hover:bg-white hover:text-primary">
+        <div className=" w-full h-[3rem]">
+          {/* <Button className="flex justify-self-center w-[full]  hover:bg-white hover:text-primary">
             {" "}
-            See all services
-          </Button>
+            Get Started
+          </Button> */}
         </div>
       </div>
     </div>

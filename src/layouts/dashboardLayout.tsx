@@ -1,50 +1,57 @@
-import { useState } from "react";
 import { Outlet } from "react-router";
 import { Home, Settings, Menu, X } from "lucide-react";
+import { SideNav } from "@/components/nav/sideNav";
+import DashboardRightSide from "@/components/DB_rightSideContent";
+import { TbDeviceDesktopAnalytics } from "react-icons/tb";
+import { ImProfile } from "react-icons/im";
+import { FaRocketchat } from "react-icons/fa";
+import { MdOutlinePayments } from "react-icons/md";
+import { CiMedicalClipboard } from "react-icons/ci";
 
 export function DashboardLayout() {
-  const [isOpen, setIsOpen] = useState(false);
+  const navItems = [
+    {
+      label: "Dashboard",
+      icon: <TbDeviceDesktopAnalytics size={20} />,
+      to: "",
+    },
+    {
+      label: "My Appointments",
+      icon: <ImProfile size={20} />,
+      to: "appointment/",
+    },
+    {
+      label: "Medical Records",
+      icon: <CiMedicalClipboard size={20} />,
+      to: "/dashboard/medical-records",
+    },
+    {
+      label: "Chat with Doctor",
+      icon: <FaRocketchat size={20} />,
+      to: "/dashboard/chat",
+    },
+    {
+      label: "Payment",
+      icon: <MdOutlinePayments size={20} />,
+      to: "/dashboard/payment",
+    },
+    {
+      label: "Notifications",
+      icon: <Settings size={20} />,
+      to: "/dashboard/notifications",
+    },
+  ];
+
   return (
     <>
-      <div className="w-full h-[100vh] bg-slate-400 flex flex-row">
-        <aside className="bg-red-400 flex flex-row justify-start h-full w-[15rem]">
-          <div className="flex">
-            <button
-              className="p-2 bg-gray-800 text-white rounded-md md:hidden"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-
-            <div
-              className={`${
-                isOpen ? "translate-x-0" : "-translate-x-full"
-              } fixed inset-y-0 left-0 w-64 bg-gray-900 text-white transform transition-transform duration-300 ease-in-out md:translate-x-0 md:static md:w-64`}
-            >
-              <nav className="flex flex-col p-4 space-y-4">
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-gray-300"
-                >
-                  <Home size={20} />
-                  <span>Home</span>
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center space-x-2 hover:text-gray-300"
-                >
-                  <Settings size={20} />
-                  <span>Settings</span>
-                </a>
-              </nav>
-            </div>
-
-            <div className="flex-1 p-4">Main Content Here</div>
-          </div>
+      <div className=" h-[100vh]  bg-lite flex ">
+        <aside>
+          <SideNav items={navItems} />
         </aside>
-        <div className="bg-blue-200 w-full h-full">
+        <div className="bg-lite w-[100vw] overflow-x-auto">
           <Outlet />
         </div>
+        <DashboardRightSide />
       </div>
     </>
   );

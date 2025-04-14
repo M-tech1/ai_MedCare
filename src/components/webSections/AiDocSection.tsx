@@ -4,7 +4,7 @@ import { Button } from "../ui/button/button";
 import { FaCheckCircle } from "react-icons/fa";
 const aiDocSection = () => {
   return (
-    <div className="w-full h-[] grid sm:grid-cols-2 grid-cols-1 p-5 mt-[1rem]">
+    <div className="w-full grid sm:grid-cols-2 grid-cols-1 p-5 mt-[1rem]">
       <div className="w-10/123 h-full align-middle justify-center">
         <div className="w-full h-full flex align-middle justify-center">
           <img className="w-full rounded-tl-3xl shadow-md" src={img} />
@@ -12,15 +12,15 @@ const aiDocSection = () => {
       </div>
       <div className=" h-full shadow-2xl">
         <div className=" p-2 flex flex-col text-left justify-start sm:px-10  gap-5">
-          <div>Find an available doctor for your issue</div>
+          <div>Find any available doctor </div>
           <div className="sm:text-3xl text-xl font-bold">
-            Consult with a doctor by Searching from anywhere
+            Consult with a doctor from anywhere
           </div>
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odio
-            assumenda iure ipsam repellat accusantium quos asperiores voluptate
-            voluptatum nobis illum hic veniam totam, aspernatur consequuntur
-            magni provident delectus corporis.
+            Skip the waiting room—aiMedcare connects you with certified doctors
+            anytime, anywhere. Get professional medical advice, prescriptions,
+            and follow-ups right from your phone or computer, all from the
+            comfort of your home.
           </div>
           <div>
             {" "}

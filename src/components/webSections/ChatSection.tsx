@@ -4,7 +4,7 @@ import QuickChat from "@/Functionalities/QuickChat";
 
 const ChatSection = () => {
   return (
-    <div className="w-full flex flex-col" id="quick-chat">
+    <div className="w-full flex flex-col" id="quick_chat">
       <div className=" h-full flex flex-col items-center justify-between ">
         <div className="text-sm">Welcome to</div>
         <div className="text-2xl font-bold my-5">Quick chat section</div>

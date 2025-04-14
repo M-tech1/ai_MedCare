@@ -6,58 +6,45 @@ import {
 } from "react-icons/fa";
 import kite from "../../assets/images/kite.png";
 import img from "../../assets/images/mdDOc.png";
-import { Button } from "../ui/button/button";
-
 import Modal from "../ui/modal";
 import { useState } from "react";
 import Form from "../ui/forms/form";
+import Button from "../ui/button";
+import { signupData } from "@/pages/signUp/data";
+import { loginData } from "@/pages/login/loginData";
+import toast from "react-hot-toast";
 
 export interface set {
   value: string;
   setValue: () => void;
 }
 
+function handleSignup() {
+  console.log("Form submitted:");
+}
+
 export default function Hero() {
   const [open, setOpen] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
 
-  const formFields = [
-    { name: "name", label: "Full Name", type: "text", required: true },
-    { name: "email", label: "Email Address", type: "email", required: true },
-    {
-      name: "message",
-      label: "Your Message",
-      type: "textarea",
-      required: true,
-      placeholder: "Write your message here...",
-    },
-    {
-      name: "role",
-      label: "Select Your Role",
-      type: "select",
-      required: true,
-      options: [
-        { value: "developer", label: "Developer" },
-        { value: "designer", label: "Designer" },
-        { value: "manager", label: "Manager" },
-      ],
-    },
-  ];
+  const handleFormSubmit = (values: Record<string, string>) => {
+    console.log("Form submitted:", values);
+    toast.success("Successful Signup");
+    setOpen(false);
+  };
 
-  // const handleFormSubmit = (values: Record<string, string>) => {
-  //   console.log("Form submitted:", values);
-  // };
   return (
     <>
       <div className="h-full w-full sm:p-5 flex flex-col justify-between">
-        <div className="flex sm:flex-row flex-col  justify-self-center ">
+        <div className="flex sm:flex-row flex-col justify-self-center">
           <div className=" flex items-start flex-col">
-            <div className=" rotate-90 sm:flex w-[12rem] sm:absolute left-[20rem]">
+            <div className=" rotate-90 sm:flex w-[12rem] sm:absolute left-[20rem] ">
               <img src={kite} />
             </div>
             {/* <div> calenda</div> */}
           </div>
-          <div className="sm:w-[40rem] w-full flex  h-[20rem] sm:items-start sm:my-5 sm:ml-[50%] ml-0">
-            <div className="sm:w-[25rem] sm:mt-10 sm:mr-20 w-full h-full flex justify-center items-center flex-col gap-7 ml-[10%]  ">
+          <div className="sm:w-[40rem] w-full flex  h-[20rem] sm:items-start sm:my-5 sm:ml-[50%] ml-0 justify-items-center">
+            <div className="sm:w-[25rem] sm:mt-10 sm:mr-20 w-full h-full flex justify-center items-center flex-col gap-7 ">
               <div className="text-[1.5rem] text-primary flex md:text-base lg:text-lg">
                 Get Quick
               </div>
@@ -69,16 +56,20 @@ export default function Hero() {
                 your health and wellness. Stay healthy today!
               </p>
               <div className="flex flex-row justify-between gap-5">
-                <Button className="bg-primary  hover:bg-secondary hover:text-white">
+                <Button
+                  label="Quick Insight"
+                  onClick={() => setOpenLogin(true)}
+                />
+                {/* <Button label="Get Started" /> */}
+                {/* <Button className="bg-primary  hover:bg-secondary hover:text-white">
                   Quick insight
-                </Button>
+                </Button> */}
+
                 <Button
                   onClick={() => setOpen(true)}
-                  className="bg-transparent text-primary hover:bg-secondary hover:text-white border-solid border-2 border-secondary"
-                  variant="outline"
-                >
-                  Get Started
-                </Button>
+                  label="Get Started"
+                  className=" hover:bg-secondary hover:text-black border-solid  border-secondary text-primary "
+                />
               </div>
             </div>
           </div>
@@ -123,44 +114,35 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        {/* <Toaster /> */}
       </div>
       <Modal
         open={open}
         handleClose={() => setOpen(false)}
-        // children={undefined}
-        title="Login"
-        message="Are you sure you want to proceed?"
+        title="Sign-Up"
+        message="signup to get started with AImedcare solutions"
       >
-        {/* <Form /> */}
+        {/* <SignUp /> */}
         <Form
-          onSubmit={function (values: Record<string, string>): void {}}
-          fields={[
-            { name: "name", label: "Full Name", type: "text", required: true },
-            {
-              name: "email",
-              label: "Email Address",
-              type: "email",
-              required: true,
-            },
-            {
-              name: "message",
-              label: "Your Message",
-              type: "textarea",
-              required: true,
-              placeholder: "Write your message here...",
-            },
-            {
-              name: "role",
-              label: "Select Your Role",
-              type: "select",
-              required: true,
-              options: [
-                { value: "developer", label: "Developer" },
-                { value: "designer", label: "Designer" },
-                { value: "manager", label: "Manager" },
-              ],
-            },
-          ]}
+          onSubmit={handleFormSubmit}
+          showSubmitButton
+          terms
+          fields={signupData}
+        />
+      </Modal>
+
+      <Modal
+        open={openLogin}
+        handleClose={() => setOpenLogin(false)}
+        title="Login"
+        message=""
+      >
+        <Form
+          fields={loginData}
+          showSubmitButton
+          onSubmit={function (values: Record<string, string>): void {
+            throw new Error("Function not implemented.");
+          }}
         />
       </Modal>
     </>

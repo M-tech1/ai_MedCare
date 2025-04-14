@@ -12,10 +12,11 @@ const BookSection = () => {
             Get started with aiMedcare today
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla
-            quae dignissimos veniam! Repudiandae dolor ex repellat animi?
-            Ducimus quis illum eligendi tempora error hic optio atque laudantium
-            ab doloribus!
+            Discover a smarter way to manage healthcare. With aiMedcare, you get
+            access to advanced AI-driven tools that simplify patient care,
+            streamline operations, and support better health outcomes. Whether
+            you're a provider or a healthcare facility, aiMedcare is here to
+            help you work more efficiently and care more effectively
           </p>
           <div className="">
             <Button className=" hover:bg-secondary hover:text-white ">

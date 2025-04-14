@@ -20,7 +20,7 @@ const Home = () => {
       <DailyHealthTips />
       <ChatSection />
       <BookSection />
-      <Pricing />
+      {/* <Pricing /> */}
       {/* <About /> */}
       <DonwloadSection />
       <Contact />

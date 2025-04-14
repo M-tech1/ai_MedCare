@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-full bg-lite grid sm:grid-cols-2 grid-cols-1 gap-5 sm:p-20 sm:my-10 m-2"
+      className="w-full h-full bg-lite grid sm:grid-cols-2 grid-cols-1 gap-5 sm:p-20 sm:my-10"
     >
       <div className="w-full h-full shadow-2xl p-10 text-left mt-10">
         <div className="flex flex-col gap-5">
@@ -14,10 +14,9 @@ const Contact = () => {
             Our Frequently asked question
           </div>
           <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
-            quisquam fugit assumenda corrupti suscipit obcaecati rem iure earum
-            illo illum ipsum quis id ipsam provident, mollitia aspernatur vero
-            hic delectus!
+            Have questions? We've got answers. Explore our FAQ section to find
+            quick solutions and helpful information about using aiMedcare,
+            booking consultations, managing your account, and more.
           </div>
         </div>
         <div className="w-full bg-primary h-1 my-5"></div>

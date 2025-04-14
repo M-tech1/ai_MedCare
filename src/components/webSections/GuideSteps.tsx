@@ -5,14 +5,14 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 
 const GuideSteps = () => {
   return (
-    <div className="mt-10 rounded-md p-5 container text-center ">
+    <div className="mt-10 rounded-md p-5 container text-center">
       <div> fastest health solution </div>
-      <div className="text-3xl text-primary font-bold">
+      <div className="text-2xl sm:text-3xl text-primary font-bold">
         {" "}
-        4 easy steps to your solution
+        4 Easy Steps To Your Solution
       </div>
-      <div className="grid sm:grid-cols-4 grid-cols-2 gap-2 justify-self-center align-middle items-center mt-10 content-center ">
-        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  m-3 p-2 bg-slate-100 ">
+      <div className="grid sm:grid-cols-4 grid-cols-2  justify-self-center align-middle items-center w-full mt-10 gap-5 ">
+        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  p-2 bg-slate-100 ">
           <div className="text-secondary mb-3">
             <FaRocketchat size="30px" />{" "}
           </div>
@@ -22,17 +22,7 @@ const GuideSteps = () => {
           </div>
         </div>
 
-        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  m-3 p-2 bg-slate-100 ">
-          <div className="text-secondary mb-3">
-            <FaUserDoctor size="30px" />{" "}
-          </div>
-          <div className="font-bold">Your Doctor</div>
-          <div className="text-sm  ">
-            Quickly connect with a specialized Doctor
-          </div>
-        </div>
-
-        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  m-3 p-2 bg-slate-100 ">
+        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  p-2 bg-slate-100 ">
           <div className="text-secondary mb-3">
             <AiOutlineSchedule size="30px" />{" "}
           </div>
@@ -42,7 +32,16 @@ const GuideSteps = () => {
           </div>
         </div>
 
-        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  m-3 p-2 bg-slate-100 ">
+        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center  p-2 bg-slate-100 ">
+          <div className="text-secondary mb-3">
+            <FaUserDoctor size="30px" />{" "}
+          </div>
+          <div className="font-bold">Your Doctor</div>
+          <div className="text-sm  ">
+            Quickly connect with a specialized Doctor
+          </div>
+        </div>
+        <div className="w-[10rem] h-[10rem] rounded-lg  flex flex-col text-center justify-center items-center   p-2 bg-slate-100 ">
           <div className="text-secondary mb-3">
             <HiOutlineLightBulb size="30px" />{" "}
           </div>

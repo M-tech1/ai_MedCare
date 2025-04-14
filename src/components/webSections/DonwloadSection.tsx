@@ -25,21 +25,18 @@ const DonwloadSection = () => {
           </div>
           <div className="mt-5 ">
             <p>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus reprehenderit sunt odit ipsum non dignissimos
-              veritatis, mollitia, iusto, voluptatum excepturi debitis
-              cupiditate aliquid atque distinctio incidunt explicabo officia
-              magnam laborum.
+              Access aiMedcare seamlessly on your phone, tablet, or computer.
+              Whether you're at home or on the go, our platform is optimized for
+              all devices to keep your healthcare just a tap away.
             </p>
           </div>
           <div className="flex flex-row w-[10rem] mt-10 gap-5 ">
             <img
-              className="size-50"
+              className="h-[40px]"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/800px-Download_on_the_App_Store_Badge.svg.png"
             />
             <img
-              className="size-70"
+              className="h-[60px]"
               src="https://static.snapchat.com/images/snapchatdotcom/native-download-images/android/en-US.png"
             />
           </div>
